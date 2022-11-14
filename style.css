@@ -1,14 +1,18 @@
 :root {
-    --main-font: "Roboto", sans-serif;
-    --secondary-font: "Raleway", sans-serif;
+    --main-font: "Roboto";
+    --secondary-font: "Raleway";
     --title-main-color: #212121;
     --secondary-color: #757575;
     --accent-color: #2196F3;
 }
 
 body {
-    font-family: var(--main-font);
-    font-style: normal;           
+    font-family: 'Roboto', 'Raleway';
+    font: size 14px;
+   line-height: 1.71;
+   letter-spacing: 0.03em;
+   color: #212121;  
+   background-color: #FFFFFF;         
 }
 
 .list {
@@ -19,7 +23,6 @@ body {
     text-decoration: none;
   }
 .header-logo {
-    font-family: var(--secondary-font);  
     font-weight: 700;
     font-size: 26px;
     line-height:1.192;
@@ -27,129 +30,123 @@ body {
     color: #000000;
 }
 
-.heder-logo-web {
-    font-family: var(--secondary-font);  
+.heder-logo-web { 
     font-weight: 700;
     font-size: 26px;
     line-height: 1.192;
     letter-spacing: 0.03em;
-    color: var(--accent-color);
+    color: #2196F3;
 }
 
-.nav-link-list{
+.nav-link{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.02em;
-    color: var(--title-main-color);
+    color: #212121;
 }
-.heder-contact {
-    font-style: normal;
-}
-.heder-mail-link {
-    font-family: var(--main-font);    
+.heder-mail-link { 
     font-weight: 500;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.02em;
-    color: var(--secondary-color);  
+    color:#757575;  
 }
-.heder-tel-link {
-    font-family: var(--main-font);    
+.heder-tel-link {   
     font-weight: 500;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.02em;
-    color: var(--secondary-color);  
+    color:#757575;  
 }
-.navi-link:hover,
+.nav-link:hover,
 .nav-link:focus {
-    color: var(--accent-color);
+    color: #2196F3;
 }
 .header-mail-link:hover,
 .header-mail-link:focus,
 .header-tel-link:hover,
 .header-tel-link:focus {
-    color: var(--accent-color); 
+    color: #2196F3; 
+}
+.hero{
+    background-color: #2F303A;;
 }
 .hero-title {
+    font-family: "Roboto";
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-}
-.hero-btn {
-    background: var(--accent-color);    
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.875;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
 }
-.advances-title {
+.hero-btn {
+    font-family: inherit;
+    background-color: #2196F3;   
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+.hero-btn:hover,
+.hero-btn:active:{
+background-color: #2196F3;
+}
+.advances-list-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--title-main-color);
+    color: #212121;
 }
 .advances-text {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
-    color: var(--secondary-color);
+    color:#757575;
 }
-.about-title {
+.about-title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.167;
-    text-align: center;
     letter-spacing: 0.03em;
-    color: var(--title-main-color);
+    color:#212121;
 }
-.about-list{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.188;
-    letter-spacing: 0.03em;
-    color: var(--title-main-color);
+.team-title{
+ font-weight: 700;
+font-size: 36px;
+line-height: 1.167;
+letter-spacing: 0.03em;
+color: #212121;
 }
 .team-list-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.188;
     letter-spacing: 0.03em;
-    color: var(--title-main-color);
+    color: #212121;
 }
 .team-list-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.188;   
     letter-spacing: 0.03em;        
-    color: var(--secondary-color);
+    color: #757575;
 }
 .projects-navigation-btn {
-    background: #F5F4FA;
-    font-family: Roboto;
-    font-style: normal;
+    font-family:"Roboto";
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.625;
-    text-align: center;
+    line-height: 1.62;
     letter-spacing: 0.03em;
-    color: var(--title-main-color);
+     color: #212121;
 }
 
 .projects-navigation-btn:hover,
 .projects-navigation-btn:focus {
-    background-color: var(--accent-color);
+   background-color: #2196F3;
     color: #FFFFFF;
 }
 
@@ -158,7 +155,7 @@ body {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--title-main-color);
+    color:#212121;
 }
 
 .our-projects-list-subtitle {
@@ -166,38 +163,34 @@ body {
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.03em;
-    color: var(--secondary-color)
+    color: #757575
 }
-    
+  .footer{
+    background: #2F303A;
+  }  
     .footer-logo {
-     font-family: var(--secondary-font);  
-    font-weight: 700;
-    font-size: 26px;
-    line-height:1.192;
-    letter-spacing: 0.03em;
-    color: #000000;
-    }
-    .footer-logo-web {
-        font-family: var(--secondary-font);  
         font-weight: 700;
         font-size: 26px;
-        line-height: 1.192;
+        line-height:1.192;
         letter-spacing: 0.03em;
-        color: var(--accent-color);
+        color: #000000;
+    }
+    .footer-logo-web {
+     font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: #2196F3;
     }
 
 .footer-address-link {
-font-family: 'Roboto';
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color: #FFFFFF;
-}
-.link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+     color: #FFFFFF;
 }
 .footer-mail-link {
-    font-family: Roboto;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -205,7 +198,6 @@ color: #FFFFFF;
     color: rgba(255, 255, 255, 0.6);
 }
 .footer-tel-link {
-    font-family: Roboto;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
