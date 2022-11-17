@@ -1,17 +1,17 @@
 :root {
-    --main-font: "Roboto";
-    --secondary-font: "Raleway";
+    --main-font: "Roboto", sans-serif;
+    --secondary-font: "Raleway", sans-serif;
     --title-main-color: #212121;
     --secondary-color: #757575;
     --accent-color: #2196F3;
 }
 
 body {
-    font-family: 'Roboto', 'Raleway';
-    font: size 14px;
+    font-family: var(--main-font);
+    font-size: 14px;
    line-height: 1.71;
    letter-spacing: 0.03em;
-   color: #212121;  
+   color:  var(--title-main-color);
    background-color: #FFFFFF;         
 }
 
@@ -23,63 +23,63 @@ body {
     text-decoration: none;
   }
 .header-logo {
-    font-family: "Raleway";
+    font-family: var(--secondary-font); 
     font-weight: 700;
     font-size: 26px;
-    line-height:1.192;
-    letter-spacing: 0.03em;
+    line-height:1.19;
     color: #000000;
 }
 
-.heder-logo-web { 
-    font-family: "Raleway";
+.header-logo-web { 
+    font-family:var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.192;
-    letter-spacing: 0.03em;
-    color: #2196F3;
+    line-height: 1.19;
+    color: var(--accent-color)
 }
 
 .nav-link{
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--title-main-color);
 }
-.heder-mail-link { 
+.header-mail-link { 
+    font-family: inherit;
     font-weight: 500;
-    font-size: 14px;
+    letter-spacing: 0.02em;
+    color:var(--secondary-color);  
+}
+.header-tel-link {   
+    font-weight: 500;
     line-height: 1.71;
     letter-spacing: 0.02em;
-    color:#757575;  
-}
-.heder-tel-link {   
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.02em;
-    color:#757575;  
+    color:var(--secondary-color)  
 }
 .nav-link:hover,
-.nav-link:focus {
-    color: #2196F3;
+.nav-link:focus,
+.nav-link:active
+ {
+ color: var(--accent-color)
 }
 .header-mail-link:hover,
 .header-mail-link:focus,
+.header-mail-link:active,
 .header-tel-link:hover,
-.header-tel-link:focus {
-    color: #2196F3; 
+.header-tel-link:focus,
+.header-tel-link:active{
+ color: var(--accent-color); 
 }
 .hero{
     background-color: #2F303A;;
 }
 .hero-title {
-    font-family: "Roboto";
+    font-family: var(--main-font);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
+    text-transform: uppercase;
     color: #FFFFFF;
 }
 .hero-btn {
@@ -89,66 +89,73 @@ body {
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.06em;
+    cursor: pointer;
     color: #FFFFFF;
 }
 .hero-btn:hover,
-.hero-btn:active:{
+.hero-btn:active,
+.hero-btn:focus:{
 background-color: #2196F3;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+     white-space: nowrap;
+    overflow: hidden;
+  }
 .advances-list-title {
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.143;
-    letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--title-main-color)
 }
 .advances-text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.714;
-    letter-spacing: 0.03em;
-    color:#757575;
+    color:var(--secondary-color);
 }
 .about-title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.167;
-    letter-spacing: 0.03em;
     color:#212121;
+}
+.team{
+    background: #F5F4FA;
 }
 .team-title{
  font-weight: 700;
 font-size: 36px;
 line-height: 1.167;
-letter-spacing: 0.03em;
-color: #212121;
+color: var(--title-main-color)
 }
 .team-list-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.188;
-    letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--title-main-color);
 }
 .team-list-text {
-    font-weight: 400;
+    
     font-size: 16px;
-    line-height: 1.188;   
-    letter-spacing: 0.03em;        
-    color: #757575;
+    line-height: 1.188;         
+    color: var(--secondary-color);
 }
 .projects-navigation-btn {
-    font-family:"Roboto";
+    font-family:inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
-     color: #212121;
+    cursor: pointer;
+     color: var(--title-main-color);
 }
 
 .projects-navigation-btn:hover,
 .projects-navigation-btn:focus {
-   background-color: #2196F3;
+   background-color: var(--accent-color);
     color: #FFFFFF;
 }
 
@@ -157,35 +164,36 @@ color: #212121;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color:#212121;
+    color:var(--title-main-color);
 }
 
 .our-projects-list-subtitle {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.875;
-    letter-spacing: 0.03em;
-    color: #757575
+    color: var(--secondary-color)
 }
   .footer{
     background: #2F303A;
   }  
     .footer-logo {
+        font-family: var(--secondary-font); 
         font-weight: 700;
         font-size: 26px;
-        line-height:1.192;
-        letter-spacing: 0.03em;
-        color: #000000;
+        line-height:1.19;
+        color: #FFFFFF;
     }
     .footer-logo-web {
-     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.192;
-    letter-spacing: 0.03em;
-    color: #2196F3;
+        font-family:var(--secondary-font);
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        color: var(--accent-color)
     }
 
 .footer-address-link {
+    
+   font-family: 'Roboto';
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -193,6 +201,7 @@ color: #212121;
      color: #FFFFFF;
 }
 .footer-mail-link {
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -200,9 +209,21 @@ color: #212121;
     color: rgba(255, 255, 255, 0.6);
 }
 .footer-tel-link {
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+}
+.footer-address-link:hover,
+.footer-address-link:focus,
+.footer-address-link:active,
+.footer-mail-link:hover,
+.footer-mail-link:focus,
+.footer-mail-link:active,
+.footer-tel-link:hover,
+.footer-tel-link:focus,
+.footer-tel-link:active{
+   color: var(--accent-color);
 }
